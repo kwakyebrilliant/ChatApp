@@ -21,11 +21,19 @@ const SideBar = () => (
   </div>
 );
 
+const CompanyHeader = () => (
+  <div className="channel-list__header">
+      <p className="channel-list__header__text">ChatApp</p>
+  </div>
+)
 
 function ChannelListContainer() {
   return (
     <>
       <SideBar />
+      <div className="channel-list__list__wrapper">
+        <CompanyHeader />
+      </div>
     </>
   )
 }
